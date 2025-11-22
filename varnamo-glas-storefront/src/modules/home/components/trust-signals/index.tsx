@@ -1,47 +1,42 @@
 "use client"
 
-import { Heading } from "@medusajs/ui"
-
 const TrustSignals = () => {
   const signals = [
     {
       id: 1,
-      icon: "🚚",
-      title: "Free Shipping",
-      description: "On orders over 500 SEK",
+      title: "Fri frakt",
+      description: "Inom Sverige på alla beställningar",
     },
     {
       id: 2,
-      icon: "🔄",
-      title: "Easy Returns",
-      description: "30-day return policy",
+      title: "Måttanpassat",
+      description: "Designa ditt räcke exakt som du vill",
     },
     {
       id: 3,
-      icon: "🛡️",
-      title: "Secure Payment",
-      description: "100% secure transactions",
+      title: "Säker betalning",
+      description: "Faktura, kort eller delbetalning",
     },
     {
       id: 4,
-      icon: "💬",
-      title: "Customer Support",
-      description: "Available 24/7",
+      title: "Kundservice",
+      description: "0431-37 10 60 • info@rackesbutiken.se",
     },
   ]
 
   return (
-    <section className="bg-slate-50 py-16 md:py-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {signals.map((signal) => (
-          <div key={signal.id} className="text-center">
-            <div className="text-4xl mb-4">{signal.icon}</div>
-            <h3 className="text-lg font-semibold text-slate-900 mb-2">
-              {signal.title}
-            </h3>
-            <p className="text-slate-600 text-sm">{signal.description}</p>
-          </div>
-        ))}
+    <section className="bg-slate-50 py-20 md:py-28 border-b border-slate-200">
+      <div className="px-6 md:px-12 lg:px-20 xl:px-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          {signals.map((signal) => (
+            <div key={signal.id}>
+              <h3 className="font-heading text-2xl font-bold text-slate-900 mb-3">
+                {signal.title}
+              </h3>
+              <p className="text-slate-600 text-lg">{signal.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )

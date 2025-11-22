@@ -1,63 +1,64 @@
 "use client"
 
 import Link from "next/link"
-import { Heading } from "@medusajs/ui"
 
 const CategoriesShowcase = () => {
   const categories = [
     {
       id: 1,
-      name: "Vases",
-      description: "Elegant vases for every style",
-      image: "🏺",
-      href: "/se/store?category=vases",
+      name: "Glasräcken",
+      count: "12 produkter",
+      href: "/se/store",
+      image: "🪟",
     },
     {
       id: 2,
-      name: "Drinkware",
-      description: "Premium glasses and mugs",
-      image: "🥃",
-      href: "/se/store?category=drinkware",
+      name: "Rostfritt glas",
+      count: "8 produkter",
+      href: "/se/store",
+      image: "⚙️",
     },
     {
       id: 3,
-      name: "Decorative",
-      description: "Home decor accessories",
-      image: "✨",
-      href: "/se/store?category=decorative",
+      name: "Vajerräcken",
+      count: "6 produkter",
+      href: "/se/store",
+      image: "🔗",
     },
     {
       id: 4,
-      name: "Tableware",
-      description: "Dining essentials",
-      image: "🍽️",
-      href: "/se/store?category=tableware",
+      name: "Specialglas",
+      count: "5 produkter",
+      href: "/se/store",
+      image: "🪜",
     },
   ]
 
   return (
-    <section className="py-16 md:py-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
-      <div className="mb-12">
-        <Heading level="h2" className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
-          Shop by Category
-        </Heading>
-        <p className="text-slate-600">Explore our diverse range of glass and home products</p>
-      </div>
+    <section className="py-20 md:py-28 bg-white border-b border-slate-200">
+      <div className="px-6 md:px-12 lg:px-20 xl:px-32">
+        <h2 className="font-heading text-5xl md:text-6xl font-bold text-slate-900 mb-16">
+          Shoppa efter kategori
+        </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {categories.map((category) => (
-          <Link key={category.id} href={category.href}>
-            <div className="group cursor-pointer">
-              <div className="relative overflow-hidden rounded-lg bg-slate-100 aspect-square mb-4 flex items-center justify-center text-6xl group-hover:bg-slate-200 transition-colors">
-                {category.image}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {categories.map((category) => (
+            <Link key={category.id} href={category.href}>
+              <div className="group cursor-pointer">
+                <div className="bg-gradient-to-br from-slate-100 to-slate-200 aspect-square mb-6 group-hover:from-slate-200 group-hover:to-slate-300 transition-all duration-300 flex items-center justify-center text-5xl opacity-70 group-hover:opacity-100">
+                  {category.image}
+                </div>
+                <h3 className="font-heading text-2xl font-bold text-slate-900 mb-2">
+                  {category.name}
+                </h3>
+                <p className="text-slate-600 mb-4">{category.count}</p>
+                <div className="text-emerald-600 font-bold group-hover:translate-x-2 transition-transform">
+                  Utforska →
+                </div>
               </div>
-              <h3 className="text-lg font-semibold text-slate-900 group-hover:text-slate-700 transition-colors">
-                {category.name}
-              </h3>
-              <p className="text-sm text-slate-600">{category.description}</p>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   )

@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { Button, Heading, Input } from "@medusajs/ui"
 
 const Newsletter = () => {
   const [email, setEmail] = useState("")
@@ -9,39 +8,41 @@ const Newsletter = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // TODO: Connect to your newsletter service
     setSubmitted(true)
     setEmail("")
     setTimeout(() => setSubmitted(false), 3000)
   }
 
   return (
-    <section className="py-16 md:py-24 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
-      <div className="max-w-2xl mx-auto text-center">
-        <Heading level="h2" className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-          Stay Updated
-        </Heading>
-        <p className="text-slate-600 mb-8">
-          Subscribe to our newsletter for exclusive offers, new arrivals, and design inspiration.
+    <section className="py-20 md:py-28 bg-white border-b border-slate-200">
+      <div className="px-6 md:px-12 lg:px-20 xl:px-32 max-w-3xl mx-auto">
+        <h2 className="font-heading text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+          Få nyheter & inspiration
+        </h2>
+        <p className="text-xl text-slate-600 mb-10">
+          Prenumerera på vårt nyhetsbrev för erbjudanden, nya produkter och designinspiration.
         </p>
 
-        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
-          <Input
+        <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4">
+          <input
             type="email"
-            placeholder="Enter your email"
+            placeholder="Din e-postadress"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="flex-1"
+            className="flex-1 px-6 py-4 bg-slate-100 border-none focus:outline-none focus:ring-2 focus:ring-emerald-600 text-lg"
           />
-          <Button type="submit" className="bg-slate-900 text-white hover:bg-slate-800">
-            Subscribe
-          </Button>
+          <button
+            type="submit"
+            className="px-8 py-4 bg-emerald-600 text-white font-heading font-bold text-lg hover:bg-emerald-700 transition-colors whitespace-nowrap"
+          >
+            Prenumerera
+          </button>
         </form>
 
         {submitted && (
-          <p className="text-green-600 mt-4 text-sm">
-            ✓ Thank you for subscribing!
+          <p className="text-emerald-600 mt-6 text-lg font-bold">
+            ✓ Tack för att du prenumererar!
           </p>
         )}
       </div>

@@ -10,15 +10,10 @@ export default async function Nav() {
   const regions = await listRegions().then((regions: StoreRegion[]) => regions)
 
   return (
-    <div className="sticky top-0 inset-x-0 z-50 group">
-      {/* Top announcement bar */}
-      <div className="bg-emerald-600 text-white text-center py-2 text-sm">
-        <p>Free shipping on orders over 500 SEK • Premium quality guaranteed</p>
-      </div>
-
+    <div className="sticky top-0 inset-x-0 z-50">
       {/* Main header */}
-      <header className="relative h-20 mx-auto duration-200 bg-white border-b border-slate-200 shadow-sm">
-        <nav className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 flex items-center justify-between w-full h-full">
+      <header className="relative h-20 mx-auto bg-white border-b border-slate-200">
+        <nav className="px-6 md:px-12 lg:px-20 xl:px-32 flex items-center justify-between w-full h-full">
           {/* Left: Menu */}
           <div className="flex items-center h-full">
             <SideMenu regions={regions} />
@@ -28,10 +23,10 @@ export default async function Nav() {
           <div className="flex items-center h-full">
             <LocalizedClientLink
               href="/"
-              className="text-2xl font-bold text-slate-900 hover:text-emerald-600 transition-colors"
+              className="font-heading text-2xl font-bold text-slate-900 hover:text-emerald-600 transition-colors"
               data-testid="nav-store-link"
             >
-              <span className="text-emerald-600">Varnamo</span> Glas
+              Glas Specialisten
             </LocalizedClientLink>
           </div>
 
@@ -43,14 +38,14 @@ export default async function Nav() {
                 href="/account"
                 data-testid="nav-account-link"
               >
-                Account
+                Mitt konto
               </LocalizedClientLink>
               <LocalizedClientLink
-                className="text-slate-700 hover:text-emerald-600 transition-colors font-medium"
+                className="px-6 py-3 bg-emerald-600 text-white font-heading font-bold hover:bg-emerald-700 transition-colors"
                 href="/se/store"
                 data-testid="nav-shop-link"
               >
-                Shop
+                Handla
               </LocalizedClientLink>
             </div>
             <Suspense
@@ -60,7 +55,7 @@ export default async function Nav() {
                   href="/cart"
                   data-testid="nav-cart-link"
                 >
-                  Cart (0)
+                  Varukorg (0)
                 </LocalizedClientLink>
               }
             >
