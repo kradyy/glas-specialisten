@@ -1,0 +1,20 @@
+{
+  "name": "varnamo-glas-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Medusa backend and Next.js storefront",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:storefront\"",
+    "dev:backend": "cd varnamo-glas && npm run dev",
+    "dev:storefront": "cd varnamo-glas-storefront && npm run dev",
+    "build": "npm run build:backend && npm run build:storefront",
+    "build:backend": "cd varnamo-glas && npm run build",
+    "build:storefront": "cd varnamo-glas-storefront && npm run build",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:storefront\"",
+    "start:backend": "cd varnamo-glas && npm run start",
+    "start:storefront": "cd varnamo-glas-storefront && npm run start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
