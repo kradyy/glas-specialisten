@@ -1,15 +1,15 @@
 import { Product, NavItem } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Glasräcken', href: '#products' },
-  { label: 'Rostfria Räcken', href: '#stainless' },
-  { label: 'Handledare', href: '#handrails' },
-  { label: 'Fransk Balkong', href: '#balconies' },
+  { label: 'Anpassat Glas', href: '#products' },
+  { label: 'Glasdesign', href: '#stainless' },
+  { label: 'Accessoarer', href: '#handrails' },
+  { label: 'Speciella Projekt', href: '#balconies' },
   { label: 'Vindskydd', href: '#windscreens' },
   { label: 'Inspiration', href: '#inspiration' },
 ];
 
-const CATEGORIES = ['Glasräcke', 'Rostfritt', 'Stolpfri', 'Alu Modern', 'Vindskydd'];
+const CATEGORIES = ['Anpassat Glas', 'Rostfritt Glas', 'Glas Design', 'Alu Modern', 'Vindskydd'];
 const ADJECTIVES = ['Premium', 'Nordic', 'Vista', 'Pure', 'Classic'];
 const BADGES = ['Storsäljare', 'Nyhet', 'Kampanj', 'Lagerrensning'];
 
@@ -20,10 +20,10 @@ export const PRODUCTS: Product[] = Array.from({ length: 30 }).map((_, i) => {
   return {
     id: `prod-${i}`,
     name: `${category} ${adjective} ${i + 100}`,
-    category: category === 'Glasräcke' ? 'Aluminium & Glas' : category,
+    category: category === 'Anpassat Glas' ? 'Aluminium & Glas' : category,
     priceStart: 1495 + (i * 150),
-    // Using the uploaded window.png as requested
-    image: './window.png', 
+    // Using shopping.png for product grid
+    image: './shopping.png', 
     badge: i % 5 === 0 ? BADGES[i % BADGES.length] : undefined,
     rating: 4.5 + (Math.random() * 0.5),
     reviews: Math.floor(Math.random() * 200) + 10,

@@ -17,7 +17,7 @@ const ProductGrid: React.FC = () => {
                 </button>
                 
                 <div className="flex items-center gap-2">
-                    {['Alla', 'Glasräcken', 'Rostfritt', 'Stolpfria'].map((cat, idx) => (
+                    {['Alla', 'Anpassat Glas', 'Rostfritt Glas', 'Glas Design'].map((cat, idx) => (
                         <button 
                             key={cat} 
                             className={`text-sm font-bold px-4 py-2 rounded transition-colors whitespace-nowrap ${

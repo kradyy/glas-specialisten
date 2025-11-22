@@ -11,9 +11,9 @@ import Newsletter from "@modules/home/components/newsletter"
 import { getRegion } from "@lib/data/regions"
 
 export const metadata: Metadata = {
-  title: "Glas Specialisten - Beställ anpassat glas & se pris direkt",
+  title: "Glas Specialisten - Designa dina glasrutor & se pris direkt",
   description:
-    "Anpassat glas för dig. Personlig köpresa. Fri frakt inom Sverige. Beställ ditt anpassade glas i vårt designverktyg och se priset direkt.",
+    "Anpassade glasrutor för dig. Personlig köpresa. Fri frakt inom Sverige. Designa dina glasrutor i vårt designverktyg och se priset direkt.",
 }
 
 export default async function Home(props: {

@@ -16,9 +16,9 @@ const ProductHeader: React.FC<ProductHeaderProps> = ({ product }) => {
       <div className="px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2 text-sm text-slate-600 mb-6">
-          <a href="/" className="hover:text-emerald-600 transition-colors">Home</a>
+          <a href="/" className="hover:text-emerald-600 transition-colors">Hem</a>
           <span>/</span>
-          <a href="/se/store" className="hover:text-emerald-600 transition-colors">Shop</a>
+          <a href="/se/store" className="hover:text-emerald-600 transition-colors">Handla</a>
           <span>/</span>
           <span className="text-slate-900 font-medium">{product.title}</span>
         </div>
@@ -40,7 +40,7 @@ const ProductHeader: React.FC<ProductHeaderProps> = ({ product }) => {
                 ))}
               </div>
               <span className="text-sm text-slate-600 ml-2">
-                {rating} ({reviewCount} reviews)
+                {rating} ({reviewCount} recensioner)
               </span>
             </div>
           </div>
@@ -56,15 +56,15 @@ const ProductHeader: React.FC<ProductHeaderProps> = ({ product }) => {
           <div className="flex flex-wrap gap-4 mt-8 pt-8 border-t border-slate-200">
             <div className="flex items-center gap-2 text-sm text-slate-700">
               <span className="text-2xl">✓</span>
-              <span>Premium Quality</span>
+              <span>Premiumkvalitet</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-slate-700">
               <span className="text-2xl">🚚</span>
-              <span>Free Shipping</span>
+              <span>Fri frakt</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-slate-700">
               <span className="text-2xl">🔄</span>
-              <span>30-Day Returns</span>
+              <span>30 dagars retur</span>
             </div>
           </div>
         </div>

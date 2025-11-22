@@ -7,7 +7,7 @@ const GeminiChat: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState<ChatMessage[]>([
-    { role: 'model', text: 'Hej! Jag är din personliga räckes-arkitekt. Behöver du hjälp med att välja stil eller mått?' }
+    { role: 'model', text: 'Hej! Jag är din personliga glasdesign-assistent. Behöver du hjälp med att välja stil eller mått för ditt anpassade glas?' }
   ]);
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -64,8 +64,8 @@ const GeminiChat: React.FC = () => {
                     <Bot className="text-white h-5 w-5" />
                 </div>
                 <div>
-                    <h3 className="text-white font-bold">RäckeBot</h3>
-                    <p className="text-brand-100 text-xs">AI Räckesspecialist</p>
+                    <h3 className="text-white font-bold">GlasBot</h3>
+                    <p className="text-brand-100 text-xs">AI Glasdesignspecialist</p>
                 </div>
             </div>
             <button onClick={() => setIsOpen(false)} className="text-white/80 hover:text-white">

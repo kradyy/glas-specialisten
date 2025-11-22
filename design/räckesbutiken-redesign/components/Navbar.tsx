@@ -20,7 +20,6 @@ const Navbar: React.FC = () => {
              <div className="flex items-center gap-2 group">
               <div className="flex flex-col">
                 <span className="font-bold text-2xl text-stone-900 tracking-tight leading-none">Glas Specialisten</span>
-                <span className="text-[10px] text-stone-400 tracking-widest uppercase font-semibold leading-none">Sverige</span>
               </div>
             </div>
           </div>

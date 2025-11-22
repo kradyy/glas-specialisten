@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
               <span className="font-bold text-2xl text-brand-900 tracking-tight">Glas Specialisten</span>
              </div>
              <p className="text-sm text-stone-500 mb-6 leading-relaxed">
-                Skräddarsydda räcken för inomhus- och utomhusmiljöer. Levereras direkt hem till dörren utan mellanhänder.
+                Skräddarsytt, anpassat glas för ditt hem. Beställ online och få det levererat direkt hem utan mellanhänder.
              </p>
              <div className="flex space-x-4">
                 <a href="#" className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-500 hover:bg-brand-600 hover:text-white transition-all"><Facebook className="h-5 w-5" /></a>
@@ -23,10 +23,10 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-sm font-bold text-stone-900 tracking-wider uppercase mb-4">Produkter</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-sm text-stone-500 hover:text-brand-600 hover:underline decoration-2 underline-offset-4">Glasräcken</a></li>
-              <li><a href="#" className="text-sm text-stone-500 hover:text-brand-600 hover:underline decoration-2 underline-offset-4">Rostfria Räcken</a></li>
+              <li><a href="#" className="text-sm text-stone-500 hover:text-brand-600 hover:underline decoration-2 underline-offset-4">Anpassat Glas</a></li>
+              <li><a href="#" className="text-sm text-stone-500 hover:text-brand-600 hover:underline decoration-2 underline-offset-4">Rostfritt Glas</a></li>
               <li><a href="#" className="text-sm text-stone-500 hover:text-brand-600 hover:underline decoration-2 underline-offset-4">Alu Modern</a></li>
-              <li><a href="#" className="text-sm text-stone-500 hover:text-brand-600 hover:underline decoration-2 underline-offset-4">Handledare</a></li>
+              <li><a href="#" className="text-sm text-stone-500 hover:text-brand-600 hover:underline decoration-2 underline-offset-4">Accessoarer</a></li>
               <li><a href="#" className="text-sm text-stone-500 hover:text-brand-600 hover:underline decoration-2 underline-offset-4">Vindskydd</a></li>
             </ul>
           </div>

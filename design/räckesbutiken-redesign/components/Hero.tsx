@@ -20,16 +20,12 @@ const Hero: React.FC = () => {
 
           <main className="pt-10 mx-auto max-w-7xl px-4 sm:pt-12 sm:px-6 md:pt-16 lg:pt-20 lg:px-8 xl:pt-28">
             <div className="sm:text-center lg:text-left">
-              <div className="inline-flex items-center px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold mb-6 tracking-wide uppercase">
-                 <span className="w-2 h-2 bg-brand-500 rounded-full mr-2 animate-pulse"></span>
-                 Sveriges ledande leverantör
-              </div>
               <h1 className="text-4xl tracking-tight font-extrabold text-stone-900 sm:text-5xl md:text-6xl mb-6">
                 <span className="block xl:inline">Skapa din</span>{' '}
                 <span className="block text-brand-600 xl:inline">drömvy idag.</span>
               </h1>
               <p className="mt-3 text-base text-stone-600 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 font-medium">
-                Högkvalitativa glasräcken, skräddarsydda för det nordiska klimatet. Förvandla din balkong eller altan med våra lättmonterade premiumlösningar.
+                Högkvalitativ, skräddarsytt anpassat glas för ditt hem. Designa och beställa online, levererat hem till din dörr. Perfekt för nordiska klimat med premiumkvalitet.
               </p>
               
               <div className="mt-4 space-y-2 sm:space-y-0 sm:flex sm:gap-4 sm:justify-center lg:justify-start text-sm text-stone-500">
@@ -44,7 +40,7 @@ const Hero: React.FC = () => {
                     href="#products"
                     className="w-full flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-xl text-white bg-brand-600 hover:bg-brand-700 md:text-lg transition-all duration-200 shadow-lg shadow-brand-200 hover:shadow-xl hover:-translate-y-0.5"
                   >
-                    Designa ditt räcke
+                    Designa ditt glas
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
                 </div>
