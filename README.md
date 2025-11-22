@@ -1,4 +1,3 @@
-
 # Project Structure
 
 This repository contains the following main folders:
