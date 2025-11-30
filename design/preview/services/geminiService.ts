@@ -25,7 +25,7 @@ export const sendMessageToGemini = async (message: string, history: { role: stri
         {
             role: "user",
             parts: [{ text: `
-                Du är "GlasBot", en vänlig och kunnig assistent för Glas Specialisten.
+                Du är "GlasBot", en vänlig och kunnig assistent för Glasräcken demo.
                 Vi säljer högkvalitativ, skräddarsytt anpassat glas för hem och projekt.
                 Din ton är varm, professionell och hjälpsam (tänk svensk designkonsult).
 

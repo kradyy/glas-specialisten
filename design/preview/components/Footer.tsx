@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2 md:col-span-1">
              <div className="flex items-center gap-2 mb-6">
-              <span className="font-bold text-2xl text-brand-900 tracking-tight">Glas Specialisten</span>
+              <span className="font-bold text-2xl text-brand-900 tracking-tight">Glasräcken demo</span>
              </div>
              <p className="text-sm text-stone-500 mb-6 leading-relaxed">
                 Skräddarsytt, anpassat glas för ditt hem. Beställ online och få det levererat direkt hem utan mellanhänder.
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-stone-100 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-xs text-stone-400 font-medium">
-                &copy; 2024 Glas Specialisten Sweden AB. Org.nr: 556000-0000.
+                &copy; 2024 Glasräcken demo Sweden AB. Org.nr: 556000-0000.
             </p>
             <div className="mt-4 md:mt-0 flex space-x-4 items-center">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Klarna_logo.svg/2560px-Klarna_logo.svg.png" className="h-5 object-contain opacity-60 grayscale hover:grayscale-0 transition-all" alt="Klarna" />

@@ -22,8 +22,8 @@ export const PRODUCTS: Product[] = Array.from({ length: 30 }).map((_, i) => {
     name: `${category} ${adjective} ${i + 100}`,
     category: category === 'Anpassat Glas' ? 'Aluminium & Glas' : category,
     priceStart: 1495 + (i * 150),
-    // Using shopping.png for product grid
-    image: './shopping.png', 
+    // Use public path for shopping.png so it works in production
+    image: '/shopping.png',
     badge: i % 5 === 0 ? BADGES[i % BADGES.length] : undefined,
     rating: 4.5 + (Math.random() * 0.5),
     reviews: Math.floor(Math.random() * 200) + 10,
